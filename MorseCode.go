@@ -36,7 +36,7 @@ var morse = map[rune]string{
 	'$': "...-..-", '@': ".--.-.",
 }
 
-// translate normal text → Morse, with spaces between letters and “/” between words.
+// Traduce texto normal a Morse, agregando un espacio entre cada letra y  “/” entre cada palabra.
 func textToMorse(s string) string {
 	var b strings.Builder
 	words := strings.Fields(s)
@@ -60,7 +60,7 @@ func textToMorse(s string) string {
 func unicodeToKey(r rune) rune { return []rune(strings.ToUpper(string(r)))[0] }
 
 // ---------------------------------------------------------------------------
-// WAV synthesis (700 Hz sine, 100 ms dit length, 8 kHz sample rate, mono 16-bit)
+// WAV synthesis (900 Hz sine, 100 ms dit length, 8 kHz sample rate, mono 16-bit)
 // ---------------------------------------------------------------------------
 
 const (
