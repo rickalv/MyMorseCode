@@ -1,3 +1,3 @@
-module awesomeProject
+module github.com/rickalv/MyMorseCode
 
-go 1.24
+go 1.22
